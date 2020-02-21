@@ -25,13 +25,16 @@ public class factitime {
 		WebElement que=driver.findElement(By.xpath("//div[@class='popup_menu_button popup_menu_button_support']"));
 	    que.click();
 	    Thread.sleep(2000);
-		WebElement pop2=driver.findElement(By.xpath("//li[@class='popup_menu_item']/descendant::a[@onclick='MenuHandler.openAbout(); return false;']"));
-		pop2.click();
-		WebElement text=driver.findElement(By.xpath("//span[contains(.,'© 2020 actiTIME Inc. All rights reserved.')]"));
-		System.out.println(text.getText());
+		//WebElement pop2=driver.findElement(By.xpath("//li[@class='popup_menu_item']/descendant::a[@onclick='MenuHandler.openAbout(); return false;']"));
+		//pop2.click();
+		//WebElement text=driver.findElement(By.xpath("//span[contains(.,'© 2020 actiTIME Inc. All rights reserved.')]"));
+		//System.out.println(text.getText());
 		Thread.sleep(2000);
 		WebElement con=driver.findElement(By.xpath("//li[@class='popup_menu_item']/descendant::a[@onclick='openSupportForm();']"));
 		con.click();
+		WebElement text=driver.findElement(By.xpath("//textarea[@placeholder='Type your message here...']"));
+		System.out.println(text.getAttribute("placeholder"));
+		
 		//Thread.sleep(2000);
 		//li[@class="popup_menu_item"]/descendant::a[@onclick="MenuHandler.openAbout(); return false;"]
 		
