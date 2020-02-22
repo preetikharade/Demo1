@@ -12,10 +12,11 @@ public class fb {
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		WebElement user=driver.findElement(By.xpath("//input[@type='email']"));
-		user.sendKeys("alia");
+		user.sendKeys("deepika");
 		WebElement user1=driver.findElement(By.xpath("//input[@type='password']"));
 		user1.sendKeys("1234");
 		WebElement login=driver.findElement(By.xpath("//input[@value='Log In']"));
 		login.click();
+		//hghghg
 	}
 }
